@@ -9,6 +9,11 @@ set shiftwidth=4
 set ignorecase
 set ambiwidth=double
 set display+=lastline
+
+set mouse+=a
+if &term =~ 'screen'
+	set ttymouse=xterm2
+endif
 "set expandtab
 
 "自動的にインデントする
@@ -96,3 +101,5 @@ endif
 
 " highlight ejs file
 au BufNewFile,BufRead *.ejs set filetype=html
+
+
